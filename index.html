@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="Calculadora.js" type="text/javascript"></script>
+    <script src="index.js" type="text/javascript" defer></script>
+    <script src="Display.js" type="text/javascript"></script>
+    <title>Calculadora</title>
+</head>
+<body>
+    <div class="contenedor">
+        <div class="informacion">
+            <div class="hora">
+                <img src="img/hora.svg" alt="">
+            </div>
+            <div class="status">
+                <img src="img/netwok.svg" alt="">
+                <img src="img/Light.svg" alt="">
+                <img src="img/bateria.svg" alt="">
+            </div>
+        </div>
+        <div class="opciones">
+            <div class="trespalito">
+                <img src="img/trespalitos.svg" alt="">
+            </div>
+            
+            <div class="repetir">
+                <img src="img/repetir.svg" alt="">
+            </div>
+        </div>
+        <div id="valor-anterior" class="resultado">
+            34+35=
+        </div>
+        <div id="valor-actual"class="numeroasig">
+            69
+        </div>
+        <div class="numeros">
+            <button onclick="display.borrarTodo()" class="divCE">
+                <P class="CE">CE</P>
+            </button>
+            <button onclick="display.borrar()" class="divBorrar">
+                <img src="img/borrar.svg" alt="" class="Borrar">
+            </button>
+            <button  value="dividir" class="divPleca operador numero">
+                <p class="Pleca">/</p>
+            </button>
+            <button value="multiplicar" class="divMultiplicar operador numero">
+                <p class="Multiplicar">*</p>
+            </button>
+            <button id ="7"class="div7 numero">
+                 <p class="n7">7</p>
+            </button>
+         
+            <button id="8" class="div8 numero">
+                <p class="n8">8</p>
+            </button>
+
+            <button id="9" class="div9 numero">
+                <p class="n9">9</p>
+            </button>
+            <button  value="restar" class="divMenos operador numero">
+                <p class="Menos">-</p>
+            </button>
+            <button id="4" class="div4 numero">
+                <p class="n4">4</p>
+            </button>
+            <button id="5" class="div5 numero">
+                <p class="n5">5</p>
+            </button>
+            <button id="6" class="div6 numero">
+                <p class="n6">6</p>
+            </button>
+            <button  value="sumar"  class="divMas operador numero">
+                <p class="Mas">+</p>
+            </button>
+            <button id="1"  class="div1 numero">
+                <p class="n 1">1</p>
+            </button>
+            <button id="2"  class="div2 numero">
+                <p class="n 2">2</p>
+            </button>
+            <button id="3"  class="div3 numero">
+                <p class="n 3">3</p>
+            </button>
+            <button  value="igual" class="divIgual operador numero">
+                <p class="n">=</p>
+            </button>
+            <button id="0" class="div0 numero numero">
+                <p class="n 0">0</p>
+            </button>
+            <button id="." class="divPunto numero numero">
+                <p  class="n .">.</p>
+            </button>
+
+        </div>
+    </div>
+</body>
+</html>
